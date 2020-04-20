@@ -7,6 +7,9 @@
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+<!-- Icons -->
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
 <!-- Popper JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
@@ -44,81 +47,38 @@
 
 <body>
     
+    <div style="height: 5%;" class="fondoVerde" >
 
-    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #00aea5;color: white;">
-        <!-- Brand -->
-        <a class="navbar-brand" href="#" style="color: white; font-weight: bold;">Inicio</a>
-        
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="color: white;background: white;">
-            <span class="navbar-toggler-icon" style=""></span>
-        </button>
-        
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar" >
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown mx-xl-4" >
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        Almacen
-                     </a>
-                     <div class="dropdown-menu">
-                         <a class="dropdown-item" href="templates/Almacen/registroMaterial.html">Registro de material</a>
-                         <a class="dropdown-item" href="templates/Almacen/materialAsignado.html">Material asignado</a>
-                         <a class="dropdown-item" href="templates/Almacen/entregaMaterial.html">Entrega de material</a>
-                         <a class="dropdown-item" href="templates/Almacen/devoluciones.html">Devoluciones</a>
-                     </div>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                       Laboratorio
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="templates/Laboratorio/armadoKits.html">Armado de kits</a>
-                        <a class="dropdown-item" href="templates/Laboratorio/direccionamientoEquipo.html">Direccionamiento de equipo</a>
-                        <a class="dropdown-item" href="templates/Laboratorio/checkList.html">Check List</a>
-                    </div>
-                </li>
-
-                <li class="nav-item mx-xl-4" >
-                    <a class="nav-link letrasMenu" href="templates/MesaDeAyuda/mesaAyuda.html" >Mesa De Ayuda</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        Operaciones
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="templates/Operaciones/llenadoProtocolo.html">Llenado de protocolo</a>
-                        <a class="dropdown-item" href="templates/Operaciones/administrarFotografia.html">Administrar fotografias</a>
-                    </div>
-                </li>
-                <li class="nav-item mx-xl-4" >
-                    <a class="nav-link letrasMenu" href="templates/NOC/noc.html" >NOC</a>
-                </li>
-                <li class="nav-item dropdown" >
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        Otros
-                    </a>
-                    <div class="dropdown-menu">
-                        <h5 class="dropdown-header">Proveedores</h5>
-                            <a class="dropdown-item" href="templates/Otros/proveedores/administrarProveedores.html">Administrar Proveedores</a>
-                            <a class="dropdown-item" href="templates/Otros/proveedores/proveedoresAsignados.html">Proveedores asignados</a>
-                        
-                            <div class="dropdown-divider"></div>
-
-                            <h5 class="dropdown-header">Contactos</h5>
-                            <a class="dropdown-item" href="templates/Otros/contactos/administrarContactos.html">Administrar Contacto</a>
-                            <a class="dropdown-item" href="templates/Otros/contactos/contactosAsignados.html">Contactos Asignados</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    </div>
 
     <!-- Contenido -->
     <div class="container-fluid imagenPuntosLineas" style="width: 100; height: 80%;">
 
-        <h2 class="py-5" >Bienvenido</h2>
+        <center style="padding-top: 5%;">
+            <div class="card text-center" style="width: 80%;">
+                <div class="card-header " style="background-color: #e3eff4;">
+                    <h4>Iniciar Seción</h3>
+                </div>
+                <div class="card-body text-center imagenPuntosLineas" style="background-size: 150%;">
+                    <label for="" class="textoInicioSesion"><span class="far fa-address-book"></span>&nbsp; Usuario</label>   <br>
+                    <input class="form-control" type="text" placeholder="Ejm: agarcia">
+                    <br>
+                    <br>
+                    <label for="" class="textoInicioSesion"><span class="fas fa-lock"></span>&nbsp; Contraseña</label> <br>
+                    <input class="form-control" type="password" placeholder="*****">
+                </div>
+                <div class="card-footer text-center" style="background-color: #d2f2f0;">
+                    <a class="btn btn-primary" href="inicio.html" >Iniciar Seción</a>
+                </div>
+            </div>
+        </center>
+        <!--<div style="border: solid black;width: 50%;height: 30%;">
+            <label for="">Usuario</label>
+            <input type="text">
+            <br>
+            <label for="">Contraseña</label>
+            <input type="password">
+        </div>-->
 
     </div>
     <!-- Fin del contenido -->
