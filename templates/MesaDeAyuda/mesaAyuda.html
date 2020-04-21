@@ -7,16 +7,19 @@
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+<!-- Icons -->
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
 <!-- Popper JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
 <!-- Latest compiled JavaScript 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>-->
 
-<link rel="stylesheet" href="css/stilos.css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/bootstrap.css">
-<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/css/stilos.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<script src="/js/bootstrap.min.js"></script>
 
 <head>
     <meta charset="UTF-8">
@@ -27,7 +30,7 @@
 <header class="container-fluid">
     <div class="row py-2" style="background-color: #0076a7;">
         <div class="col-4 d-none d-sm-block">
-            <img src="img/escudoJalisco.png" alt="" style="width: 20%; min-width: 70px;">
+            <img src="/img/escudoJalisco.png" alt="" style="width: 20%; min-width: 70px;">
             <!--<img src="img/escudoJalisco.png" alt="" style="width: 70px;">-->
         </div>
 
@@ -36,7 +39,7 @@
         </div>
 
         <div class="col-4">
-            <img src="img/logoBlancomediano.png" alt="" style="width: 50%;padding-top: 1%; min-width: 150px;">
+            <img src="/img/logoBlancomediano.png" alt="" style="width: 50%;padding-top: 1%; min-width: 150px;">
             <!--<img src="img/logoBlancomediano.png" alt="" style="width: 150px;">-->
         </div>
     </div>
@@ -62,10 +65,11 @@
                         Almacen
                      </a>
                      <div class="dropdown-menu">
-                         <a class="dropdown-item" href="#">Registro de material</a>
-                         <a class="dropdown-item" href="#">Material asignado</a>
-                         <a class="dropdown-item" href="#">Entrega de material</a>
-                         <a class="dropdown-item" href="#">Devoluciones</a>
+                         <a class="dropdown-item" href="/templates/Almacen/registroMaterial.html">Registro de material</a>
+                         <a class="dropdown-item" href="/templates/Almacen/solicitudMaterial.html">Solicitud Material</a>
+                         <a class="dropdown-item" href="/templates/Almacen/entregaMaterial.html">Entrega de material</a>
+                         <a class="dropdown-item" href="/templates/Almacen/devoluciones.html">Devoluciones</a>
+                         <a class="dropdown-item" href="/templates/Almacen/inventario.html">Inventario</a>
                      </div>
                 </li>
 
@@ -74,26 +78,26 @@
                        Laboratorio
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Armado de kits</a>
-                        <a class="dropdown-item" href="#">Direccionamiento de equipo</a>
-                        <a class="dropdown-item" href="#">Check List</a>
+                        <a class="dropdown-item" href="/templates/Laboratorio/armadoKits.html">Armado de kits</a>
+                        <a class="dropdown-item" href="/templates/Laboratorio/direccionamientoEquipo.html">Direccionamiento de equipo</a>
+                        <a class="dropdown-item" href="/templates/Laboratorio/checkList.html">Check List</a>
                     </div>
                 </li>
 
                 <li class="nav-item mx-xl-4" >
-                    <a class="nav-link letrasMenu" href="#" >Mesa De Ayuda</a>
+                    <a class="nav-link letrasMenu" href="/templates/MesaDeAyuda/mesaAyuda.html" >Mesa De Ayuda</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                         Operaciones
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Llenado de protocolo</a>
-                        <a class="dropdown-item" href="#">Administrar fotografias</a>
+                        <a class="dropdown-item" href="/templates/Operaciones/llenadoProtocolo.html">Llenado de protocolo</a>
+                        <a class="dropdown-item" href="/templates/Operaciones/administrarFotografia.html">Administrar fotografias</a>
                     </div>
                 </li>
                 <li class="nav-item mx-xl-4" >
-                    <a class="nav-link letrasMenu" href="#" >NOC</a>
+                    <a class="nav-link letrasMenu" href="/templates/NOC/noc.html" >NOC</a>
                 </li>
                 <li class="nav-item dropdown" >
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
@@ -101,14 +105,14 @@
                     </a>
                     <div class="dropdown-menu">
                         <h5 class="dropdown-header">Proveedores</h5>
-                            <a class="dropdown-item" href="#">Administrar Proveedores</a>
-                            <a class="dropdown-item" href="#">Proveedores asignados</a>
+                            <a class="dropdown-item" href="/templates/Otros/proveedores/administrarProveedores.html">Administrar Proveedores</a>
+                            <a class="dropdown-item" href="/templates/Otros/proveedores/proveedoresAsignados.html">Proveedores asignados</a>
                         
                             <div class="dropdown-divider"></div>
 
                             <h5 class="dropdown-header">Contactos</h5>
-                            <a class="dropdown-item" href="#">Administrar Contacto</a>
-                            <a class="dropdown-item" href="#">Contactos Asignados</a>
+                            <a class="dropdown-item" href="/templates/Otros/contactos/administrarContactos.html">Administrar Contacto</a>
+                            <a class="dropdown-item" href="/templates/Otros/contactos/contactosAsignados.html">Contactos Asignados</a>
                     </div>
                 </li>
             </ul>
@@ -116,9 +120,9 @@
     </nav>
 
     <!-- Contenido -->
-    <div class="container-fluid imagenPuntosLineas" style="width: 100; height: 80%;">
+    <div class="container-fluid " style="width: 100; height: 80%;">
 
-        <h2 class="py-5" >Bienvenido</h2>
+        <h2 class="text-center py-4" >Mesa De Ayuda</h2>
 
     </div>
     <!-- Fin del contenido -->
